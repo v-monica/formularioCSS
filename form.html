@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Gestor de Tareas</h1>
+            <a href="">Tareas</a>
+            <a href=""><span>Nueva Tarea</span></a>
+            <a href="">Búsqueda</a>
+            <a href="">Cerrar Sesión</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Nueva Tareas</h2>
+            <form>
+                <label for="cod-tarea">Código de Tarea:</label>
+                <input type="text" id="cod-tarea" name="cod-tarea" required>
+                
+                <label for="nombre-tarea">Nombre de la Tarea:</label>
+                <input type="text" id="nombre-tarea" name="nombre-tarea" required>
+
+                <label for="descripcion-tarea">Descripción de la Tarea:</label>
+                <textarea id="descripcion-tarea" name="descripcion-tarea" required></textarea>
+                
+                <label for="nivel-prioridad">Nivel de Prioridad:</label>
+                <select id="nivel-prioridad" name="nivel-prioridad" required>
+                    <option value="alta" selected>Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="pendiente" selected>Pendiente</option>
+                    <option value="en_progreso">En Progreso</option>
+                    <option value="completada">Completada</option>
+                </select>
+                
+                <label for="fecha">Fecha de Vencimiento:</label>
+                <input type="date" id="fecha" name="fecha" required placeholder="dd/mm/aaaa">
+                
+                <button type="submit">Registrar Tarea</button>
+            </form>
+        </section>
+    </main>   
+</body>
+</html>
